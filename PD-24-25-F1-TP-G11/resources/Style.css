@@ -1,0 +1,346 @@
+/*--jasmine: #FFE477;
+--mint: #1DB794;
+--light-red: #FD7777;
+--orange-peel: #FFA733;
+--coral: #FF7956;*/
+.root {
+    -fx-background-color: WHITE;
+    -fx-text-fill: #545454;
+}
+
+.button {
+    -fx-font-family: "Berlin Sans FB";
+    -fx-font-size: 17px;
+    -fx-text-fill: #1DB794;
+    -fx-border-color: #1DB794;
+    -fx-border-width: 2px;
+    -fx-background-color: white;
+}
+.btnSignUp {
+    -fx-font-family: "Berlin Sans FB";
+    -fx-text-fill: white;
+    -fx-background-color: #1DB794;
+    -fx-font-size: 17px;
+}
+.btnBar{
+    -fx-font-family: "Berlin Sans FB";
+    -fx-text-fill: #545454;
+    -fx-background-color: white;
+    -fx-font-size: 10px;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+.btnPlus{
+    -fx-font-family: "Berlin Sans FB";
+    -fx-text-fill: white;
+    -fx-font-size: 28px;
+    -fx-background-color: #1DB794;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+.btnCancel{
+    -fx-font-family: "Berlin Sans FB";
+    -fx-text-fill: white;
+    -fx-font-size: 17px;
+    -fx-background-color: #FD7777;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+.btnInvite{
+    -fx-background-color: #f0f3f5;
+    -fx-border-color: transparent;
+    -fx-border-width: 1;
+    -fx-text-fill: #949494;
+}
+.btnPagar{
+    -fx-font-size: 14px;
+    -fx-background-radius: 0;
+    -fx-border-color: #4A90E2;
+    -fx-border-width: 2;
+    -fx-text-fill: white;
+    -fx-background-color: #4A90E2;
+}
+.btnCancelPaga{
+    -fx-font-size: 14px;
+    -fx-background-radius: 0;
+    -fx-border-color: #4A90E2;
+    -fx-border-width: 2;
+    -fx-text-fill: #4A90E2;
+    -fx-background-color: white;
+}
+.btnInvites{
+    -fx-border-color: #f0f3f5;
+    -fx-border-width: 0px 0 2px 0;
+    -fx-pref-width: 40px;
+    -fx-pref-height: 40px;
+}
+.btnAdd{
+    -fx-border-width: 0 0 0 0;
+}
+.button:hover{
+    -fx-opacity: 50%;
+    -fx-cursor: hand;
+}
+
+.textField {
+    -fx-font-family: "Berlin Sans FB";
+    -fx-font-weight: normal;
+    -fx-font-size: 13px;
+    -fx-border-color:  #545454;
+    -fx-border-width: 0;
+    -fx-background-color: #f0f3f5;
+}
+.tfEditable{
+    -fx-font-family: "Berlin Sans FB";
+    -fx-font-weight: normal;
+    -fx-font-size: 13px;
+    -fx-border-color:  #545454;
+    -fx-border-width: 0;
+    -fx-background-color: #f0f3f5;
+    /*-fx-text-fill: #bdbebf;*/
+    -fx-opacity: 50%;
+    cursor: not-allowed;
+}
+.TextBold{
+    -fx-font-family: "Berlin Sans FB";
+    -fx-font-weight: bold;
+    -fx-text-fill: #545454;
+}
+.text{
+    -fx-font-family: "Berlin Sans FB";
+    -fx-font-weight: normal;
+    -fx-text-fill: #545454;
+}
+
+.scroll-pane {
+    -fx-background: #ffffff;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 2px;
+    -fx-background-insets: 0;
+}
+.scroll-pane .viewport {
+    -fx-background-color: #ffffff;
+}
+.scroll-bar:vertical .thumb, .scroll-bar:horizontal .thumb {
+    -fx-background-color: #cccccc;
+}
+.scroll-bar:vertical .track, .scroll-bar:horizontal .track {
+    -fx-background-color: white;
+}
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-pref-height: 0;
+    -fx-pref-width: 0;
+    -fx-opacity: 0;
+}
+
+.labelGrupoValores{
+    -fx-font-size: 15px;
+}
+.labelHomePage{
+    -fx-label-padding:  0 10 0 10;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-background-color: #f0f3f5;
+    -fx-font-size: 14px;
+    -fx-text-fill: #545454;
+    -fx-border-color: #545454;
+    -fx-pref-width: 300px;
+    -fx-pref-height: 40px;
+    -fx-alignment: CENTER;
+}
+.labelActivityPage{
+    -fx-label-padding:  0 10 0 10;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-background-color: #f0f3f5;
+    -fx-font-size: 14px;
+    -fx-text-fill: #545454;
+    -fx-border-color: #545454;
+    -fx-pref-width: 300px;
+    -fx-pref-height: 40px;
+    -fx-alignment: center;
+}
+.errorLabel{
+    -fx-text-fill: #545454;
+    -fx-font-family: "Berlin Sans FB";
+}
+.groupLabel{
+    -fx-text-fill: #545454;
+    -fx-font-size: 17px;
+    -fx-font-family: "Berlin Sans FB";
+    -fx-border-color: #f0f3f5;
+    -fx-border-width: 0px 0 2px 0;
+    -fx-pref-width: 330px;
+    -fx-pref-height: 50px;
+    -fx-min-height: 50px;
+    -fx-padding: 0 10px 0 10px;
+    -fx-margin: 10px 0 0 0;
+}
+.groupLabel:hover{
+    -fx-cursor: hand;
+    -fx-background-color: #f0f3f5;
+}
+.labelNoInvite{
+    -fx-text-fill: #545454;
+    -fx-font-size: 17px;
+}
+.labelGroup{
+    -fx-text-fill: #545454;
+    -fx-font-size: 15px;
+    -fx-padding: 0 5px 0 5px;
+    -fx-alignment: center;
+}
+.labelInvite{
+    -fx-text-fill: #545454;
+    -fx-font-size: 17px;
+    -fx-font-family: "Berlin Sans FB";
+    -fx-border-color: #f0f3f5;
+    -fx-border-width: 0px 0 2px 0;
+    -fx-pref-width: 222px;
+    -fx-pref-height: 40px;
+}
+
+.choice-box {
+    -fx-background-color: #f0f3f5;
+    -fx-text-fill: #545454;
+}
+.choice-box .list-view {
+    -fx-background-color: #f0f3f5;
+    -fx-border-color: #545454;
+    -fx-border-width: 1px;
+    -fx-padding: 5px;
+}
+.choice-box .arrow {
+    -fx-opacity: 0;
+}
+.choice-box:hover{
+    -fx-cursor: hand;
+}
+
+.combo-box {
+    -fx-background-color: white;
+    -fx-text-fill: #545454;
+}
+.combo-box > .arrow-button {
+    -fx-background-color: #f0f3f5;
+    -fx-padding: 0;
+}
+.combo-box .popup-list-view,
+.combo-box .combo-box-editor,
+.combo-box .list-cell {
+    -fx-background-color: #f0f3f5;
+    -fx-text-fill: #545454;
+}
+.combo-box .selected {
+    -fx-text-fill: #545454;
+    -fx-background-color: white;
+}
+.combo-box .list-cell:hover {
+    -fx-text-fill: #4A90E2;
+    -fx-background-color: white;
+}
+.combo-box .arrow-button .arrow {
+    -fx-opacity: 0;
+}
+.combo-box:hover {
+    -fx-cursor: hand;
+}
+.combo-box .popup-list-view .list-view {
+    -fx-background-color: white;
+    -fx-padding: 0;
+}
+
+.check-box {
+    -fx-background-color: white;
+    -fx-text-fill: #545454;
+    -fx-pref-width: 216px;
+    -fx-max-width: 216px;
+    -fx-min-width: 216px;
+
+}
+.check-box .box {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+}
+.check-box:selected {
+    -fx-text-fill: #4A90E2;
+}
+.check-box .list-cell {
+    -fx-background-color: #f0f3f5;
+    -fx-text-fill: #545454;
+    -fx-border-width: 1px;
+    -fx-padding: 5px;
+}
+.check-box:hover {
+    -fx-text-fill: #4A90E2;
+    -fx-cursor: hand;
+}
+.check-box .box {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+}
+
+* {
+    -fx-primary-color: #1DB794;
+    -fx-secondary-color: #f0f3f5;
+    -fx-light-grey-color: #d1d1d1;
+
+    -fx-focus-color: -fx-secondary-color;
+}
+
+.date-picker .text-field {
+    -fx-background-color: -fx-secondary-color;
+    -fx-text-fill: #545454;
+    -fx-border-color:  #f0f3f5;
+    -fx-padding: 5px;
+}
+.date-picker .arrow-button {
+    -fx-background-color: -fx-primary-color;
+    -fx-background-radius: 0;
+}
+.date-picker .arrow-button:hover {
+    -fx-opacity: 70%;
+}
+.date-picker .arrow-button .arrow {
+    -fx-background-color: white;
+}
+.date-picker .cell {
+    -fx-background-color: white;
+}
+.date-picker .cell:hover {
+    -fx-background-color: -fx-light-grey-color;
+}
+.date-picker .cell:focused {
+    -fx-background-color: -fx-light-grey-color;
+}
+.date-picker .selected {
+    -fx-background-color: -fx-primary-color;
+    -fx-text-fill: white;
+}
+.date-picker .selected:focused {
+    -fx-background-color: -fx-primary-color;
+    -fx-text-fill: white;
+}
+.date-picker-popup  {
+    -fx-border-color: transparent;
+}
+.date-picker-popup .month-year-pane {
+    -fx-background-color: -fx-primary-color;
+}
+.date-picker-popup .month-year-pane .label {
+    -fx-text-fill: white;
+}
+.date-picker-popup .spinner .button .left-arrow,
+.date-picker-popup .spinner .button .right-arrow {
+    -fx-background-color: white;
+}
+.date-picker-popup .spinner .button,
+.date-picker-popup .spinner .button {
+    -fx-background-color: #1DB794;
+}

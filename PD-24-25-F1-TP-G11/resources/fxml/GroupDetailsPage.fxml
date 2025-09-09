@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="335.0" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pt.isec.pd.trabalho_pratico.ui_controller.Home.Groups.GroupDetails.GroupDetailsController">
+   <children>
+      <VBox fx:id="vbGroup" prefHeight="550.0" prefWidth="335.0" spacing="5.0">
+         <children>
+            <Label fx:id="lbGroupName" alignment="CENTER" maxHeight="70.0" minHeight="70.0" onMouseClicked="#onEditGroup" prefHeight="70.0" prefWidth="335.0" textFill="#1db794">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER" maxHeight="30.0" minHeight="30.0" prefHeight="30.0">
+               <children>
+                  <VBox maxWidth="70.0" minWidth="70.0" prefWidth="70.0">
+                     <children>
+                        <Label alignment="CENTER" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" styleClass="labelGrupoValores" text="You owe" textFill="#fd7777" />
+                        <Label fx:id="lbOwe" alignment="CENTER" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" styleClass="labelGrupoValores" textFill="#fd7777" />
+                        <Pane maxHeight="1.0" maxWidth="70.0" minHeight="1.0" minWidth="70.0" prefHeight="1.0" prefWidth="70.0" style="-fx-background-color: #fd7777;" />
+                     </children>
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <Label alignment="CENTER" styleClass="labelGrupoValores" text="You are owed" textFill="#1db794" />
+                        <Label fx:id="lbOwed" alignment="CENTER" maxWidth="87.0" minWidth="87.0" prefWidth="87.0" styleClass="labelGrupoValores" textFill="#1db794" />
+                        <Pane maxHeight="1.0" maxWidth="87.0" minHeight="1.0" minWidth="87.0" prefHeight="1.0" prefWidth="87.0" style="-fx-background-color: #1db793;" />
+                     </children>
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <Label alignment="CENTER" styleClass="labelGrupoValores" text="Group Total" textFill="#545454" />
+                        <Label fx:id="lbGroupTotal" alignment="CENTER" maxWidth="76.0" minWidth="76.0" prefWidth="76.0" styleClass="labelGrupoValores" textFill="#545454" />
+                        <Pane maxHeight="1.0" maxWidth="76.0" minHeight="1.0" minWidth="76.0" prefHeight="1.0" prefWidth="76.0" style="-fx-background-color: #545454;" />
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefWidth="335.0" spacing="20.0" styleClass="btnBar">
+               <children>
+                  <Button maxHeight="25.0" maxWidth="25.0" minHeight="25.0" minWidth="25.0" mnemonicParsing="false" onAction="#onLeaveGroup" prefHeight="25.0" prefWidth="25.0" styleClass="btnBar">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/leave_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button maxHeight="25.0" maxWidth="25.0" minHeight="25.0" minWidth="25.0" mnemonicParsing="false" onAction="#onDeleteGroup" prefHeight="25.0" prefWidth="25.0" styleClass="btnBar">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/trash_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button maxHeight="25.0" maxWidth="25.0" minHeight="25.0" minWidth="25.0" mnemonicParsing="false" onAction="#onAddPeopleToGroup" prefHeight="25.0" prefWidth="25.0" styleClass="btnBar">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/add_person_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button maxHeight="25.0" maxWidth="25.0" minHeight="25.0" minWidth="25.0" mnemonicParsing="false" onAction="#onDownloadExpense" prefHeight="25.0" prefWidth="25.0" styleClass="btnBar">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/image-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <ScrollPane maxWidth="335.0" minWidth="335.0" prefWidth="335.0">
+               <content>
+                  <AnchorPane maxWidth="315.0" minWidth="315.0" prefWidth="315.0">
+                     <children>
+                        <VBox fx:id="vbexpense" maxWidth="315.0" minWidth="315.0" prefWidth="315.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="335.0" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pt.isec.pd.trabalho_pratico.ui_controller.Home.Groups.Invites.InviteController">
+   <children>
+      <VBox prefHeight="550.0" prefWidth="335.0" spacing="5.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Text fill="#1db794" strokeType="OUTSIDE" strokeWidth="0.0" text="Invites">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Button fx:id="btnAddInvite" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" onAction="#onAddInvite" prefHeight="20.0" prefWidth="20.0" styleClass="btnAdd">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/ad_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets left="210.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <ScrollPane maxHeight="490.0" maxWidth="335.0" minHeight="490.0" minWidth="315.0" prefHeight="490.0" prefWidth="315.0">
+               <content>
+                  <AnchorPane maxWidth="315.0" minWidth="315.0" prefWidth="315.0">
+                     <children>
+                        <VBox fx:id="vbInvites" maxWidth="315.0" minWidth="315.0" prefHeight="200.0" prefWidth="315.0" spacing="10.0">
+                           <children>
+                              <Label fx:id="lbNoInvites" maxHeight="30.0" maxWidth="315.0" minHeight="30.0" minWidth="315.0" prefHeight="30.0" prefWidth="315.0" styleClass="labelNoInvite" text="No invites" textFill="#545454">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets left="20.0" right="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

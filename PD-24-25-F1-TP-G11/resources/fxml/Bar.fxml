@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxWidth="335.0" minWidth="335.0" prefWidth="335.0" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pt.isec.pd.trabalho_pratico.ui_controller.SideBarController">
+   <bottom>
+      <HBox prefHeight="50.0" prefWidth="335.0" style="-fx-border-color: #545454; -fx-border-width: 1 0 0 0;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnHomePage" mnemonicParsing="false" onAction="#onHomePage" prefHeight="50.0" prefWidth="67.0" styleClass="btnBar" textAlignment="JUSTIFY">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <graphic>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="text">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/home_icon.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets bottom="2.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Text fill="#545454" strokeType="OUTSIDE" strokeWidth="0.0" text="Home">
+                           <font>
+                              <Font name="Berlin Sans FB" size="13.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+               </graphic>
+            </Button>
+            <Button fx:id="btnGroupPage" alignment="CENTER" mnemonicParsing="false" onAction="#onGroupPage" prefHeight="50.0" prefWidth="67.0" styleClass="btnBar">
+               <graphic>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/group_icon.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets bottom="2.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Text fill="#545454" strokeType="OUTSIDE" strokeWidth="0.0" text="Groups">
+                           <font>
+                              <Font name="Berlin Sans FB" size="13.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+               </graphic>
+            </Button>
+            <Button fx:id="btnAddExpense" alignment="CENTER" mnemonicParsing="false" onAction="#onExpensePage" prefHeight="50.0" prefWidth="67.0" styleClass="btnPlus" text="+">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnHistoryPage" mnemonicParsing="false" onAction="#onHistoryPage" prefHeight="50.0" prefWidth="67.0" styleClass="btnBar">
+               <graphic>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/activity_icon.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets bottom="2.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Text fill="#545454" strokeType="OUTSIDE" strokeWidth="0.0" text="History">
+                           <font>
+                              <Font name="Berlin Sans FB" size="13.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+               </graphic>
+            </Button>
+            <Button fx:id="btnAccountPage" mnemonicParsing="false" onAction="#onAccountPage" prefHeight="50.0" prefWidth="67.0" styleClass="btnBar">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <graphic>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/account_icon.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets bottom="2.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Text fill="#545454" strokeType="OUTSIDE" strokeWidth="0.0" text="Account">
+                           <font>
+                              <Font name="Berlin Sans FB" size="13.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <Pane fx:id="ContentPane" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

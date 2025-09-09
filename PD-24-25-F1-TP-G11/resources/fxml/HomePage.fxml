@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="335.0" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pt.isec.pd.trabalho_pratico.ui_controller.Home.HomeController">
+   <children>
+      <Pane maxHeight="550.0" maxWidth="335.0" minHeight="500.0" minWidth="335.0" prefHeight="550.0" prefWidth="335.0">
+         <children>
+            <VBox prefHeight="550.0" prefWidth="335.0">
+               <children>
+                  <VBox prefHeight="50.0" prefWidth="100.0">
+                     <children>
+                        <HBox prefHeight="50.0" prefWidth="335.0">
+                           <children>
+                              <VBox prefHeight="50.0" prefWidth="100.0">
+                                 <children>
+                                    <Text fill="#fd7777" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="You owe" textAlignment="CENTER" wrappingWidth="100.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="txOwe" fill="#fd7777" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="100.0">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Pane maxHeight="1.0" maxWidth="95.0" minHeight="1.0" minWidth="95.0" prefHeight="1.0" prefWidth="95.0" style="-fx-background-color: #fd7777;">
+                                       <VBox.margin>
+                                          <Insets left="5.0" />
+                                       </VBox.margin>
+                                    </Pane>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="10.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox prefHeight="50.0" prefWidth="100.0">
+                                 <children>
+                                    <Text fill="#1db793" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="You are owed" wrappingWidth="100.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="txOwed" fill="#1db793" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="100.0">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Pane maxHeight="1.0" maxWidth="100.0" minHeight="1.0" minWidth="100.0" prefHeight="1.0" prefWidth="100.0" style="-fx-background-color: #1db793;" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox prefHeight="50.0" prefWidth="100.0">
+                                 <children>
+                                    <Text fill="#545454" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Total Balance" wrappingWidth="100.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="txTotal" fill="#545454" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="100.0">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Pane maxHeight="1.0" maxWidth="95.0" minHeight="1.0" minWidth="95.0" prefHeight="1.0" prefWidth="95.0" style="-fx-background-color: #545454;">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </Pane>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox maxWidth="338.0" minWidth="300.0" prefHeight="30.0" prefWidth="338.0">
+                           <children>
+                              <ComboBox fx:id="cbGroup" maxHeight="30.0" maxWidth="140.0" minHeight="30.0" minWidth="140.0" prefHeight="30.0" prefWidth="140.0">
+                                 <HBox.margin>
+                                    <Insets left="20.0" right="10.0" />
+                                 </HBox.margin>
+                              </ComboBox>
+                              <ComboBox fx:id="cbowe" maxHeight="30.0" maxWidth="140.0" minHeight="30.0" minWidth="140.0" prefHeight="30.0" prefWidth="140.0">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </ComboBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <ScrollPane hbarPolicy="NEVER" prefHeight="500.0" prefWidth="335.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="315.0">
+                           <children>
+                              <VBox fx:id="vbLabels" prefWidth="310.0" spacing="5.0">
+                                 <padding>
+                                    <Insets left="10.0" right="5.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ScrollPane>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
